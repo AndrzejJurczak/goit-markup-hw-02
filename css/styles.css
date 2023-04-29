@@ -17,3 +17,13 @@ p {
   letter-spacing: 0.03em;
   text-align: left;
 }
+.contact-links .link {
+  color: red;
+}
+.contact-links .link:hover {
+  color: yellow;
+  border: 3px solid black;
+}
+p:hover {
+  color: yellow;
+}
