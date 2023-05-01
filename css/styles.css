@@ -7,7 +7,6 @@ body {
   line-height: 36px;
   letter-spacing: 0.06em;
   text-align: left;
-  cursor: pointer;
 }
 p {
   color: #757575;
@@ -17,13 +16,52 @@ p {
   letter-spacing: 0.03em;
   text-align: left;
 }
-.contact-links .link {
-  color: red;
+.contact-link-header .link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  color: #757575;
 }
-.contact-links .link:hover {
-  color: yellow;
-  border: 3px solid black;
+.contacts-links-footer .link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  color: rgba(0, 0, 0, 0.6);
 }
-p:hover {
-  color: yellow;
+.contacts-links-header .link:hover,
+.contacts-links-header .link:focus,
+.contects-link-footer .link:hover,
+.contacts-link-footer .link:focus {
+  color: green;
+}
+.button-style {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 139%;
+  cursor: pointer;
+}
+.button-style:hover,
+.button-style:focus {
+  color: green;
+}
+a,
+h3 {
+  text-decoration: none;
+}
+a:hover,
+a:active,
+h3:hover,
+h3:active,
+p:hover,
+p:active {
+  text-decoration: underline;
+}
+.blue {
+  color: #2196f3;
+}
+.studio-name {
+  color: #000000;
+}
+.blue-button {
+  background-color: #2196f3;
 }
