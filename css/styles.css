@@ -3,11 +3,154 @@ body {
   color: #212121;
   background-color: #ffffff;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 36px;
   letter-spacing: 0.06em;
   text-align: left;
 }
+.button-menu {
+  font-weight: 700px;
+  font-style: bold;
+  font-size: 16px;
+  line-height: 1.36;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 250px;
+  height: 50px;
+}
+.button-menu:hover,
+.button-menu:focus {
+  background-color: #2196f3;
+  text-decoration: underline;
+}
+.button-portfolio-list {
+  font-size: 16px;
+  line-height: 26px;
+  color: #f5f4fa;
+}
+.button-portfolio-item:hover,
+.button-portfolio-item:focus {
+  background-color: #2196f3;
+  text-decoration: underline;
+}
+a,
+h3,
+p {
+  text-decoration: none;
+}
+a:hover,
+a:active,
+h3:hover,
+h3:active,
+p:hover,
+p:active {
+  text-decoration: underline;
+}
+h1 {
+  font-weight: 900px;
+  font-size: 44px;
+  line-height: 1.36;
+  font-style: black;
+}
+h2 {
+  font-weight: 700px;
+  font-size: 36px;
+  font-style: bold;
+  line-height: 1.17;
+}
+h3 {
+  font-weight: 500px;
+  font-size: 16px;
+}
+
+/* links */
+.nav-menu-link {
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: 1.17;
+  color: #212121;
+}
+
+.contact-menu-link {
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: 1.17;
+  color: #757575;
+}
+.bottom-contact {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.bottom-contact-address {
+  color: #ffffff;
+}
+.bottom-contact-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.nav-menu-link:hover,
+.nav-menu-link:focus,
+.contact-menu-link:hover,
+.contact-menu-link:focus,
+.bottom-contact-address:hover,
+.bottom-contact-address:focus,
+.bottom-contact-link:hover,
+.bottom-contact-link:focus {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+/*.studio-name - > color of name Studio Web */
+.studio-name-header,
+.studio-name-footer {
+  font-weight: 700px;
+  font-size: 26px;
+  line-height: 1.17;
+}
+.studio-name-header {
+  color: #000000;
+}
+.studio-name-footer {
+  color: #ffffff;
+}
+/* .studio-name-blue - > color WEB */
+.studio-name-blue {
+  color: #2196f3;
+}
+.team-name {
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 1.17;
+}
+.team-position {
+  font-size: 16px;
+  line-height: 1.17px;
+  color: #757575;
+}
+.client-name {
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 2;
+}
+.client-service {
+  font-size: 16px;
+  line-height: 1.87;
+  color: #757575;
+}
+.our-strenghts-item {
+  font-size: 14px;
+}
+.our-strenghts-title {
+  font-weight: 700px;
+  line-height: 1.17;
+}
+.our-strenghts-description {
+  line-height: 1.71;
+  color: #757575;
+}
+
+/*
 p {
   color: #757575;
   font-size: 16px;
@@ -48,6 +191,8 @@ a,
 h3 {
   text-decoration: none;
 }
+
+ po najechaniu kursorem myszy lub tab podkleślenie linku 
 a:hover,
 a:active,
 h3:hover,
@@ -56,12 +201,16 @@ p:hover,
 p:active {
   text-decoration: underline;
 }
+/* .blue -> kolor aktywnej zakładki 
 .blue {
   color: #2196f3;
 }
+studio-name -> kolor nazwy studia Web 
 .studio-name {
   color: #000000;
 }
+ blue-button -> kolor przycisku 
 .blue-button {
   background-color: #2196f3;
 }
+*/

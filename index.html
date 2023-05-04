@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <!-- start head / metadane /-->
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -19,24 +20,39 @@
       Studio - Portfolio | goit-markup-hw-02 | GoIT kurs FullStack Developer
     </title>
   </head>
+  <!-- end head / metadane /-->
 
   <body>
     <!--start header-->
     <header>
-      <a class="studio-name" href="./index.html"
-        ><span class="blue">Web</span>Studio</a
+      <a class="studio-name-header" href="./index.html"
+        ><span class="studio-name-blue">Web</span>Studio</a
       >
       <nav>
-        <ul>
-          <li><a class="blue" href="#">Agencja</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="#">Kontakt</a></li>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link">Agencja</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./portfolio.html" class="nav-menu-link">Portfolio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link">Kontakt</a>
+          </li>
         </ul>
       </nav>
-      <div>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+48111111111">+48 111 111 111</a>
-      </div>
+      <ul class="contact-menu">
+        <li class="contact-menu-item">
+          <a href="mailto:info@devstudio.com" class="contact-menu-link"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="contact-menu-item">
+          <a href="tel:+48111111111" class="contact-menu-link"
+            >+48 111 111 111</a
+          >
+        </li>
+      </ul>
     </header>
     <!--end header-->
 
@@ -44,34 +60,34 @@
     <main>
       <section>
         <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button class="blue-button" type="button">Zamów usługę</button>
+        <button class="button-menu" type="button">Zamów usługę</button>
       </section>
-      <section>
-        <ul>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+      <section class="section-paragraph">
+        <ul class="our-strengths-list">
+          <li class="our-strenghts-item">
+            <h3 class="our-strenghts-title">LOREM IPSUM</h3>
+            <p class="our-strenghts-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+          <li class="our-strenghts-item">
+            <h3 class="our-strenghts-title">LOREM IPSUM</h3>
+            <p class="our-strenghts-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+          <li class="our-strenghts-item">
+            <h3 class="our-strenghts-title">LOREM IPSUM</h3>
+            <p class="our-strenghts-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+          <li class="our-strenghts-item">
+            <h3 class="our-strenghts-title">LOREM IPSUM</h3>
+            <p class="our-strenghts-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
@@ -110,48 +126,48 @@
       </section>
       <!--end what we do - czym sie zajmujemy-->
       <!--start our team-->
-      <section>
-        <h2>O nas</h2>
-        <ul>
-          <li>
+      <section class="about-us-team-name">
+        <h2 class="team-name-title">O nas</h2>
+        <ul class="team-name-list">
+          <li class="team-name-item">
             <img
               src="images/footer/footer_img_1.jpg"
               alt="product designer"
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>Product Designer</p>
+            <h3 class="team-name">John Doe</h3>
+            <p class="team-position">Product Designer</p>
           </li>
-          <li>
+          <li class="team-name-item">
             <img
               src="images/footer/footer_img_2.jpg"
               alt="fronted developer man"
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>Fronted Developer</p>
+            <h3 class="team-name">John Doe</h3>
+            <p class="team-position">Fronted Developer</p>
           </li>
-          <li>
+          <li class="team-name-item">
             <img
               src="images/footer/footer_img_3.jpg"
               alt="marketing man woman"
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>Marketing</p>
+            <h3 class="team-name">John Doe</h3>
+            <p class="team-position">Marketing</p>
           </li>
-          <li>
+          <li class="team-name-item">
             <img
               src="images/footer/footer_img_4.jpg"
               alt="ui designer man"
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>UI Designer</p>
+            <h3 class="team-name">John Doe</h3>
+            <p class="team-position">UI Designer</p>
           </li>
         </ul>
       </section>
@@ -159,25 +175,31 @@
     </main>
     <!--end main-->
     <!--start footer-->
-    <footer>
-      <a class="studio-name" href="./index.html"
-        ><span class="blue">Web</span>Studio</a
+    <footer class="bottom">
+      <a class="studio-name-footer" href="./index.html"
+        ><span class="studio-name-blue">Web</span>Studio</a
       >
       <address>
-        <ul class="contacts-links-footer">
-          <li>
+        <ul class="bottom-contact">
+          <li class="bottom-contact-item">
             <a
-              class="link"
+              class="bottom-contact-address"
               href="https://goo.gl/maps/BGaXXpHN84WvRaow5"
               target="_blank"
               rel="noreferrer noopener"
               >m. Warszawa, Aleje Jerozolimskie 21</a
             >
           </li>
-          <li>
-            <a class="link" href="mailto:info@example.com">info@example.com</a>
+          <li class="bottom-contact-item">
+            <a href="mailto:info@example.com" class="bottom-contact-link"
+              >info@example.com</a
+            >
           </li>
-          <li><a class="link" href="tel:+48111111111">+48 111 111 111</a></li>
+          <li>
+            <a href="tel:+48111111111" class="bottom-contact-link"
+              >+48 111 111 111</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
