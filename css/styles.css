@@ -1,41 +1,107 @@
-body {
-  font-family: "Roboto", sans-serif;
-  color: #212121;
-  background-color: #ffffff;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-  text-align: left;
+/* global variables */
+:root {
+  --main-font: "Roboto", sans-serif;
+  --main-text-color: #212121;
+  --secondary-text-color: #ffffff;
+  --third-text-color: #757575;
+  --text-color: #2196f3;
+  background-color: #e5e5e5;
+  --background-body-color: #ffffff;
+  --background-header-color: #2f303a;
+  --background-footer-color: #2f303a;
+  --logo-web-color: #2196f3;
+  --logo-studio-first-color: #000000;
+  --logo-studio-second-color: #ffffff;
+  --button-text-color: #000000;
+  --button-color: #2196f3;
+  --background-button-color: #f5f4fa;
+  --contact-text-color: #757575;
+  --line-color: #ececec;
+  --background-container-color: #ffffff;
+  --background-section-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --list-style: none;
 }
+/* end global variables */
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--background-body-color);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+.top {
+  border-bottom: 1px solid var(--line-color);
+}
+.bg-header {
+  background-color: var(--background-header-color);
+}
+.bottom {
+  background-color: var(--background-footer-color);
+}
+h1 {
+  color: var(--secondary-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
 .button-menu {
-  font-weight: 700px;
-  font-style: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.36;
-  border: none;
-  color: white;
+  color: var(--secondary-text-color);
+  background-color: var(--button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  cursor: pointer;
   width: 250px;
-  height: 50px;
+  height: 45.67px;
+  letter-spacing: 0.06em;
 }
+
 .button-menu:hover,
 .button-menu:focus {
-  background-color: #2196f3;
   text-decoration: underline;
 }
-.button-portfolio-list {
+
+.our-strenghts-item > .our-strenghts-title {
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.our-strenghts-item > .our-strenghts-description {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.list {
+  list-style: var(--list-style);
+}
+
+.button-portfolio-item {
+  font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  color: #f5f4fa;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background: var(--background-button-color);
+  border-radius: 4px;
 }
 .button-portfolio-item:hover,
 .button-portfolio-item:focus {
-  background-color: #2196f3;
+  background-color: var(--button-color);
   text-decoration: underline;
 }
-a,
+/*
+----a,
 h3,
 p {
   text-decoration: none;
@@ -49,45 +115,47 @@ p:active {
   text-decoration: underline;
 }
 h1 {
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  font-style: black;
+  color: #fff;
+  text-transform: uppercase;
 }
 h2 {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
   font-style: bold;
   line-height: 1.17;
 }
 h3 {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
 }
 
+*/
 /* links */
 .nav-menu-link {
-  font-weight: 500px;
-  font-size: 14px;
+  font-weight: 500;
   line-height: 1.17;
-  color: #212121;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
-
 .contact-menu-link {
-  font-weight: 500px;
-  font-size: 14px;
+  font-weight: 500;
   line-height: 1.17;
-  color: #757575;
+  color: var(--third-text-color);
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .bottom-contact {
-  font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .bottom-contact-address {
-  color: #ffffff;
+  color: var(--secondary-text-color);
 }
 .bottom-contact-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-text-color);
 }
 .nav-menu-link:hover,
 .nav-menu-link:focus,
@@ -97,55 +165,81 @@ h3 {
 .bottom-contact-address:focus,
 .bottom-contact-link:hover,
 .bottom-contact-link:focus {
-  color: #2196f3;
+  color: var(--text-color);
   text-decoration: underline;
+  cursor: pointer;
 }
 
-/*.studio-name - > color of name Studio Web */
+/*studio-name - > color of name Studio Web */
 .studio-name-header,
 .studio-name-footer {
-  font-weight: 700px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.studio-name-blue {
+  color: var(--logo-web-color);
 }
 .studio-name-header {
-  color: #000000;
+  color: var(--logo-studio-first-color);
 }
 .studio-name-footer {
-  color: #ffffff;
+  color: var(--logo-studio-second-color);
 }
-/* .studio-name-blue - > color WEB */
-.studio-name-blue {
-  color: #2196f3;
+
+/* team name */
+.team-name-item {
+  background-color: var(--background-container-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-name {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 .team-position {
   font-size: 16px;
   line-height: 1.17px;
-  color: #757575;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+}
+.logo-client-list {
+  border-bottom: 1px solid black;
 }
 .client-name {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 .client-service {
   font-size: 16px;
   line-height: 1.87;
-  color: #757575;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
 }
-.our-strenghts-item {
+.client-description {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+/*.our-strenghts-item {
   font-size: 14px;
 }
 .our-strenghts-title {
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 1.17;
 }
 .our-strenghts-description {
   line-height: 1.71;
   color: #757575;
+}*/
+.div {
+  border: 1px solid black;
 }
