@@ -103,6 +103,7 @@ body {
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  color: var(--main-text-color);
   text-decoration: none;
 }
 .contact-menu-link {
@@ -210,7 +211,7 @@ body {
 
 .our-strenghts-title {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
