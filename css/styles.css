@@ -2,22 +2,22 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --main-text-color: #212121;
-  --secondary-text-color: #ffffff;
+  --secondary-text-color: #fff;
   --third-text-color: #757575;
-  --text-color: #2196f3;
-  --background-body-color: #ffffff;
+  --fourth-text-color: #2196f3;
+  --background-body-color: #fff;
   --background-header-color: #2f303a;
   --background-footer-color: #2f303a;
   --logo-web-color: #2196f3;
-  --logo-studio-first-color: #000000;
-  --logo-studio-second-color: #ffffff;
-  --button-text-color: #000000;
+  --logo-studio-first-color: #000;
+  --logo-studio-second-color: #fff;
+  --button-text-color: #000;
   --button-color: #2196f3;
   --background-button-color: #f5f4fa;
   --contact-text-color: #757575;
   --line-color: #ececec;
-  --background-container-color: #ffffff;
-  --background-section-color: #ffffff;
+  --background-container-color: #fff;
+  --background-section-color: #fff;
   --background-section-second-color: #f5f4fa;
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --list-style: none;
@@ -37,6 +37,9 @@ body {
 }
 .hero {
   background-color: var(--background-header-color);
+}
+.main-title {
+  font-family: inherit;
   color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -51,11 +54,10 @@ body {
   font-style: normal;
 }
 
-.main-title {
+.second-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
 }
 .list {
   list-style: var(--list-style);
@@ -63,6 +65,7 @@ body {
 /*end body style*/
 
 .main-button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.36;
@@ -73,6 +76,8 @@ body {
   letter-spacing: 0.06em;
   border: rgba(255, 255, 255, 0.15);
   border-radius: 4px;
+  cursor: pointer;
+  margin: center;
 }
 
 .button-menu:hover,
@@ -81,6 +86,7 @@ body {
 }
 
 .button-portfolio-item {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -95,7 +101,6 @@ body {
 .button-portfolio-item:focus {
   color: var(--secondary-text-color);
   background-color: var(--button-color);
-  cursor: pointer;
 }
 
 /* links */
@@ -106,6 +111,7 @@ body {
   color: var(--main-text-color);
   text-decoration: none;
 }
+
 .contact-menu-link {
   font-weight: 500;
   line-height: 1.17;
@@ -113,19 +119,20 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.current:active {
+  color: var(--fourth-text-color);
+}
 .bottom-contact {
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 .bottom-contact-address {
-  line-height: 1, 71;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
   color: var(--secondary-text-color);
   text-decoration: inherit;
   font-style: normal;
 }
 .bottom-contact-link {
-  line-height: 1, 71;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-text-color);
   text-decoration: inherit;
@@ -139,7 +146,7 @@ body {
 .bottom-contact-address:focus,
 .bottom-contact-link:hover,
 .bottom-contact-link:focus {
-  color: var(--text-color);
+  color: var(--fourth-text-color);
   cursor: pointer;
 }
 /*end links*/
@@ -152,11 +159,10 @@ body {
   font-style: bold;
   font-size: 26px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
-.studio-name-blue {
+.studio-name-web {
   color: var(--logo-web-color);
 }
 .studio-name-header {
@@ -174,7 +180,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
 }
 .team-name-item {
   background-color: var(--background-container-color);
@@ -183,17 +188,15 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
 }
 .team-position {
   font-size: 16px;
-  line-height: 1.17px;
-  letter-spacing: 0.03em;
+  line-height: 1.17;
   color: var(--third-text-color);
 }
 /*end team name*/
 
-.logo-client-list {
+.our-customers-list {
   border-bottom: 1px solid black;
 }
 .client-name {
@@ -205,7 +208,6 @@ body {
 .client-service {
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
 
@@ -213,10 +215,8 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
 }
 .our-strenghts-description {
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--third-text-color);
 }

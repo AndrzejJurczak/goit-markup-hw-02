@@ -26,18 +26,20 @@
     <!--start header-->
     <header class="top">
       <a class="studio-name-header" href="./index.html"
-        ><span class="studio-name-blue">Web</span>Studio</a
+        ><span class="studio-name-web">Web</span>Studio</a
       >
       <nav>
         <ul class="nav-menu list">
           <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link">Agencja</a>
+            <a href="#" class="nav-menu-link current">Agencja</a>
           </li>
           <li class="nav-menu-item">
-            <a href="./portfolio.html" class="nav-menu-link">Portfolio</a>
+            <a href="./portfolio.html" class="nav-menu-link current"
+              >Portfolio</a
+            >
           </li>
           <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link">Kontakt</a>
+            <a href="#" class="nav-menu-link current">Kontakt</a>
           </li>
         </ul>
       </nav>
@@ -58,132 +60,139 @@
 
     <!--start main-->
     <main>
-      <section class="button-portfolio">
-        <ul class="button-portfolio-list list">
-          <li>
-            <button class="button-portfolio-item" type="button">
-              Wszystkie
-            </button>
-          </li>
-          <li>
-            <button class="button-portfolio-item" type="button">Strony</button>
-          </li>
-          <li>
-            <button class="button-portfolio-item" type="button">
-              Aplikacje
-            </button>
-          </li>
-          <li>
-            <button class="button-portfolio-item" type="button">Dizajn</button>
-          </li>
-          <li>
-            <button class="button-portfolio-item" type="button">
-              Marketing
-            </button>
-          </li>
-        </ul>
-
-        <ul class="logos-client-list list">
-          <li class="logos-client-item">
-            <img
-              class="logo-client-pic"
-              src="./images/portfolio/portfolio_project_img_1.jpg"
-              alt=""
-              width="370"
-              height="294"
-            />
-            <h3 class="client-name">Technocrack</h3>
-            <p class="client-service">Strona internetowa</p>
-          </li>
-          <li class="logos-client-item">
-            <img
-              class="logo-client-pic"
-              src="./images/portfolio/portfolio_project_img_2.jpg"
-              alt=""
-              width="370"
-              height="294"
-            />
-            <h3 class="client-name">Grafika New Orlean vs Golden Star</h3>
-            <p class="client-service">Dizajn</p>
-          </li>
-          <li class="logos-client-item">
-            <img
-              class="logo-client-pic"
-              src="./images/portfolio/portfolio_project_img_3.jpg"
-              alt=""
-              width="370"
-              height="294"
-            />
-            <h3 class="client-name">Restauracja Seafood</h3>
-            <p class="client-service">Aplikacja</p>
-          </li>
-          <li class="logos-client-item">
-            <img
-              class="logo-client-pic"
-              src="./images/portfolio/portfolio_project_img_4.jpg"
-              alt=""
-              width="370"
-              height="294"
-            />
-            <h3 class="client-name">Projekt Prime</h3>
-            <p class="client-service">Marketing</p>
-          </li>
-          <li class="logos-client-item">
-            <img
-              class="logo-client-pic"
-              src="./images/portfolio/portfolio_project_img_5.jpg"
-              alt=""
-              width="370"
-              height="294"
-            />
-            <h3 class="client-name">Projekt Boxes</h3>
-            <p class="client-service">Aplikacja</p>
-          </li>
-          <li class="logos-client-item">
-            <img
-              class="logo-client-pic"
-              src="./images/portfolio/portfolio_project_img_6.jpg"
-              alt=""
-              width="370"
-              height="294"
-            />
-            <h3 class="client-name">Inspiration has no Borders</h3>
-            <p class="client-service">Strona internetowa</p>
-          </li>
-          <li class="logos-client-item">
-            <img
-              class="logo-client-pic"
-              src="./images/portfolio/portfolio_project_img_7.jpg"
-              alt=""
-              width="370"
-              height="294"
-            />
-            <h3 class="client-name">Magazyn Limited Edition</h3>
-            <p class="client-service">Dizajn</p>
-          </li>
-          <li class="logos-client-item">
-            <img
-              class="logo-client-pic"
-              src="./images/portfolio/portfolio_project_img_8.jpg"
-              alt=""
-              width="370"
-              height="294"
-            />
-            <h3 class="client-name">Projekt LAB</h3>
-            <p class="client-service">Marketing</p>
-          </li>
-          <li class="logos-client-item">
-            <img
-              class="logo-client-pic"
-              src="./images/portfolio/portfolio_project_img_9.jpg"
-              alt=""
-              width="370"
-              height="294"
-            />
-            <h3 class="client-name">Growing Buisness</h3>
-            <p class="client-service">Aplikacja</p>
-          </li>
-        </ul>
+      <section>
+        <div>
+          <ul class="button-portfolio-list list">
+            <li>
+              <button class="button-portfolio-item" type="button">
+                Wszystkie
+              </button>
+            </li>
+            <li>
+              <button class="button-portfolio-item" type="button">
+                Strony
+              </button>
+            </li>
+            <li>
+              <button class="button-portfolio-item" type="button">
+                Aplikacje
+              </button>
+            </li>
+            <li>
+              <button class="button-portfolio-item" type="button">
+                Dizajn
+              </button>
+            </li>
+            <li>
+              <button class="button-portfolio-item" type="button">
+                Marketing
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="our-customers">
+          <ul class="our-customers-list list">
+            <li class="our-customer-item">
+              <img
+                class="logo-client-pic"
+                src="./images/portfolio/portfolio_project_img_1.jpg"
+                alt="laptop with pictures on it"
+                width="370"
+                height="294"
+              />
+              <h3 class="client-name">Technocrack</h3>
+              <p class="client-service">Strona internetowa</p>
+            </li>
+            <li class="our-customer-item">
+              <img
+                class="logo-client-pic"
+                src="./images/portfolio/portfolio_project_img_2.jpg"
+                alt="two basketball players fight for the ball in the air"
+                width="370"
+                height="294"
+              />
+              <h3 class="client-name">Grafika New Orlean vs Golden Star</h3>
+              <p class="client-service">Dizajn</p>
+            </li>
+            <li class="our-customer-item">
+              <img
+                class="logo-client-pic"
+                src="./images/portfolio/portfolio_project_img_3.jpg"
+                alt="restaurant name the seefood restaurant"
+                width="370"
+                height="294"
+              />
+              <h3 class="client-name">Restauracja Seafood</h3>
+              <p class="client-service">Aplikacja</p>
+            </li>
+            <li class="our-customer-item">
+              <img
+                class="logo-client-pic"
+                src="./images/portfolio/portfolio_project_img_4.jpg"
+                alt="black over-ear headphones"
+                width="370"
+                height="294"
+              />
+              <h3 class="client-name">Projekt Prime</h3>
+              <p class="client-service">Marketing</p>
+            </li>
+            <li class="our-customer-item">
+              <img
+                class="logo-client-pic"
+                src="./images/portfolio/portfolio_project_img_5.jpg"
+                alt="two cardboard boxes with company names"
+                width="370"
+                height="294"
+              />
+              <h3 class="client-name">Projekt Boxes</h3>
+              <p class="client-service">Aplikacja</p>
+            </li>
+            <li class="our-customer-item">
+              <img
+                class="logo-client-pic"
+                src="./images/portfolio/portfolio_project_img_6.jpg"
+                alt="monitor with web page turned on"
+                width="370"
+                height="294"
+              />
+              <h3 class="client-name">Inspiration has no Borders</h3>
+              <p class="client-service">Strona internetowa</p>
+            </li>
+            <li class="our-customer-item">
+              <img
+                class="logo-client-pic"
+                src="./images/portfolio/portfolio_project_img_7.jpg"
+                alt="limited series open book"
+                width="370"
+                height="294"
+              />
+              <h3 class="client-name">Magazyn Limited Edition</h3>
+              <p class="client-service">Dizajn</p>
+            </li>
+            <li class="our-customer-item">
+              <img
+                class="logo-client-pic"
+                src="./images/portfolio/portfolio_project_img_8.jpg"
+                alt="pendant design"
+                width="370"
+                height="294"
+              />
+              <h3 class="client-name">Projekt LAB</h3>
+              <p class="client-service">Marketing</p>
+            </li>
+            <li class="our-customer-item">
+              <img
+                class="logo-client-pic"
+                src="./images/portfolio/portfolio_project_img_9.jpg"
+                alt="someone is typing on a laptop keyboard"
+                width="370"
+                height="294"
+              />
+              <h3 class="client-name">Growing Buisness</h3>
+              <p class="client-service">Aplikacja</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!--end main-->
@@ -191,7 +200,7 @@
     <!--start footer-->
     <footer class="bottom">
       <a class="studio-name-footer" href="./index.html"
-        ><span class="studio-name-blue">Web</span>Studio</a
+        ><span class="studio-name-web">Web</span>Studio</a
       >
       <address class="addresss">
         <ul class="bottom-contact list">
